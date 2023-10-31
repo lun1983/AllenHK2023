@@ -15,13 +15,14 @@ from barcode.writer import ImageWriter
 import qrcode
 import os
 import re
+import cairosvg
 
 inputFile = './input.txt'
 
 
 def genBarcode(inputFileToList):
     for stritem in inputFileToList:
-        stritem_filename = re.sub(r'[^a-zA-Z0-9]', '', stritem)
+        stritem_filename = re.sub(r'[^a-zA-Z0-9]', '', stritem)[-8:]
         outitem = 'BARCODE_' + stritem_filename
 
         barcode.generate('code128',
@@ -29,13 +30,18 @@ def genBarcode(inputFileToList):
                          # writer=ImageWriter,
                          output=outitem)
 
+        # 将SVG转换成PNG
+        inputSVG = f'{outitem}.svg'
+        outputPng = f'{outitem}.png'
+        cairosvg.svg2png(url=inputSVG, write_to=outputPng, dpi=200)
+
     return
 
 
 def genQRcode(inputFileToList):
     for stritem in inputFileToList:
         stritem_filename = re.sub(r'[^a-zA-Z0-9]', '', stritem)
-        outitem = 'QRCODE_' + stritem_filename
+        outitem = 'QRCODE_' + stritem_filename[-8:]
         img = qrcode.make(stritem)
         img.save(f"{outitem}.png")
 
