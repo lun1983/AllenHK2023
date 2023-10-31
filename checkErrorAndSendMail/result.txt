@@ -1,0 +1,19 @@
+START AT:2023-10-03 14:29:41.253708
+
+***** NOW CHECKING :./logfile1.txt***** 
+
+error : 0
+fail : 0
+denied : 0
+
+<<<<<FILE NOT FOUND: ./logfile.txt>>>>>
+
+***** NOW CHECKING :./share_usb.txt***** 
+
+error : 1027
+fail : 2
+denied : 0
+
+<<<<<Backup Failed.>>>>>
+END AT:2023-10-03 14:29:41.554250.
+

@@ -1,0 +1,16 @@
+*****Now checking: ./xxx - 1 - 副本.doc*****
+1 Checkword Found: 资讯
+2 Checkword Found: 资讯
+3 Checkword Found: 資訊
+4 Checkword Found: 資訊
+5 Checkword Found: 软体
+6 Checkword Found: 軟體
+*****Now checking: ./xxx - 1.doc*****
+1 Checkword Found: 资讯
+2 Checkword Found: 资讯
+3 Checkword Found: 資訊
+4 Checkword Found: 資訊
+5 Checkword Found: 软体
+6 Checkword Found: 軟體
+7 Checkword Found: 經營單位
+8 Checkword Found: 经营单位
