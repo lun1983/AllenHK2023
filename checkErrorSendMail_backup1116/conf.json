@@ -1,0 +1,19 @@
+{
+  "checkwordings": [
+    {"checkword": "error"},
+    {"checkword": "fail"},
+    {"checkword": "denied"}
+  ],
+  "email_flg": "n",
+  "notification": [
+    {"name": "Allen","email": "allenwang@cbic.hk"},
+    {"name": "Michael","email": "Michael@cbic.hk"},
+    {"name": "Anthony","email": "AnthonyHo@cbic.hk"},
+    {"name": "Samuel","email": "huyao@cbic.hk"}
+  ],
+  "myfilepaths": [
+    {"myfilepath": "./logfile1.txt"},
+    {"myfilepath": "./logfile.txt"},
+    {"myfilepath": "./share_usb.txt"}
+  ]
+}
