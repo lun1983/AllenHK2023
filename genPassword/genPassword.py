@@ -19,13 +19,13 @@ RESULTFILE = './PASSWORD.TXT'
 def main():
     print('****** genPassword start *****')
 
-    characters = string.ascii_letters + string.digits + string.punctuation
+    mydigits = ['@', '_', '#']
+    characters = string.ascii_letters + random.choice(mydigits) + string.digits
     pswd = ''.join(random.choice(characters) for _ in range(8))
 
     print('pswd: ' + pswd)
     with open(RESULTFILE, 'w') as file:
         file.writelines(pswd)
-
     return
 
     print('****** genPassword end *****')

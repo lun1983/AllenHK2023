@@ -1,4 +1,4 @@
-START AT:2023-10-03 14:29:41.253708
+START AT:2023-11-25 10:02:20.881061
 
 ***** NOW CHECKING :./logfile1.txt***** 
 
@@ -8,12 +8,8 @@ denied : 0
 
 <<<<<FILE NOT FOUND: ./logfile.txt>>>>>
 
-***** NOW CHECKING :./share_usb.txt***** 
-
-error : 1027
-fail : 2
-denied : 0
+<<<<<FILE NOT FOUND: ./share_usb.txt>>>>>
 
 <<<<<Backup Failed.>>>>>
-END AT:2023-10-03 14:29:41.554250.
+END AT:2023-11-25 10:02:20.888446.
 

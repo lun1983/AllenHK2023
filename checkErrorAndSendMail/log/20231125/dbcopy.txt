@@ -1,0 +1,39 @@
+ [ LOG 11/24/2023 Fri23:50:01.21 ]  start copying DB data to usb_hd_bkup 
+20231124 	
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Friday, November 24, 2023 11:50:01 PM
+   Source : e:\prod_DB_bkup\
+     Dest : \\192.168.0.14\B\Oracle DB Backup\20231124\
+
+    Files : poly*.*
+	    
+  Options : /DCOPY:DA /COPY:DAT /NP /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	  New Dir          2	e:\prod_DB_bkup\
+	    New File  		  15.1 g	polyocci_dbo.dmp
+	    New File  		  150019	polyocci_dbo.log
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         1         0         0         0         0
+   Files :         2         2         0         0         0         0
+   Bytes :  15.188 g  15.188 g         0         0         0         0
+   Times :   0:02:40   0:02:40                       0:00:00   0:00:00
+
+
+   Speed :           101567005 Bytes/sec.
+   Speed :            5811.710 MegaBytes/min.
+   Ended : Friday, November 24, 2023 11:52:46 PM
+
+ [ LOG 11/24/2023 Fri23:52:46.60 ]  end   copying DB data to usb_hd_bkup 
+ [ LOG 11/24/2023 Fri23:52:46.62 ]  start copying DB data to 192.168.0.17 
+ [ LOG 11/25/2023 Sat 0:19:15.33 ]  end   Copying DB data to 192.168.0.17 
+ [ LOG 11/25/2023 Sat 0:19:15.33 ]  start copying DB data to IFRS17 env 
+ [ LOG 11/25/2023 Sat 0:20:18.50 ]  end   copying DB data to IFRS17 env 
