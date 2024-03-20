@@ -19,9 +19,15 @@ RESULTFILE = './PASSWORD.TXT'
 def main():
     print('****** genPassword start *****')
 
-    mydigits = ['@', '_', '#']
-    characters = string.ascii_letters + random.choice(mydigits) + string.digits
+
+    characters = string.ascii_letters  + string.digits
     pswd = ''.join(random.choice(characters) for _ in range(8))
+    print('pswd1: ' + pswd)
+
+    index = random.randint(1, len(pswd) - 1)
+    mydigits = ['@', '_', '#']
+
+    pswd = pswd[:index]+random.choice(mydigits)+pswd[index:]
 
     print('pswd: ' + pswd)
     with open(RESULTFILE, 'w') as file:
