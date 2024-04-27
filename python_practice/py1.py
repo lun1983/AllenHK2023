@@ -6,7 +6,5 @@ Description: this a test python
 Author     : allen
 Created    : 2024-04-27
 '''
-
+# 测试git
 print('hello world.')
-
-print('hello world2')
