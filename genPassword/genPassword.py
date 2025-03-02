@@ -13,28 +13,27 @@
 import random
 import string
 
-RESULTFILE = './PASSWORD.TXT'
+RESULTFILE = "./PASSWORD.TXT"
 
 
 def main():
-    print('****** genPassword start *****')
+    print("****** genPassword start *****")
 
-
-    characters = string.ascii_letters  + string.digits
-    pswd = ''.join(random.choice(characters) for _ in range(8))
-    print('pswd1: ' + pswd)
+    characters = string.ascii_letters + string.digits
+    pswd = "".join(random.choice(characters) for _ in range(8))
+    print("pswd1: " + pswd)
 
     index = random.randint(1, len(pswd) - 1)
-    mydigits = ['@', '_', '#']
+    mydigits = ["@", "_", "#"]
 
-    pswd = pswd[:index]+random.choice(mydigits)+pswd[index:]
+    pswd = pswd[:index] + random.choice(mydigits) + pswd[index:]
 
-    print('pswd: ' + pswd)
-    with open(RESULTFILE, 'w') as file:
+    print("pswd: " + pswd)
+    with open(RESULTFILE, "w") as file:
         file.writelines(pswd)
     return
 
-    print('****** genPassword end *****')
+    print("****** genPassword end *****")
 
 
 if __name__ == "__main__":
